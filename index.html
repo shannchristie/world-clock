@@ -90,6 +90,7 @@ max-width: 600px;
     <div>
 <select id="city"> 
     <option value="">Select a city... </option>
+    <option value="current">My current location</option> 
     <option value="Europe/London">London 🇬🇧</option> 
     <option value="America/New_York">New York 🇺🇸</option>
     <option value="Australia/Melbourne">Melbourne 🇦🇺</option> 
@@ -152,6 +153,9 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
     if (!cityTimeZone) return; 
 
   
