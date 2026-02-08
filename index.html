@@ -5,28 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style> 
+
+body {
+    background-color: #f9f7fe;
+    font-family: sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:10px;
+  
+}
+
+select {
+    display: block; 
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px; 
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0 0 5px; 
+    font-size: 28px;
+}
+
+.city {
+    display: flex; 
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 1px dashed rgb(209, 207, 207);
+
+}
+
+.city:last-child {
+    border: none;
+}
+
+.date {
+    opacity: 0.7;
+}
+
+.time {
+    font-size: 48px;
+    font-weight: bold; 
+}
+
+.time small {
+    font-size: 24px;
+    vertical-align: middle; 
+    line-height: 36px; 
+}
+
+
+footer {
+max-width: 600px;
+    margin: 60px auto;
+    text-align: center; 
+   
+    color: rgba (0, 0, 0, 0.6);
+}
+
+</style>
 <body>
     <div class="container">
     <h1>World Clock</h1>
+    <div>
 <select> 
     <option value="">Select a city... </option>
     <option value="">London 🇬🇧</option> 
     <option value="">New York 🇺🇸</option>
     <option value="">Melbourne 🇦🇺</option> 
 </select>
-</div>
+
 
 <div class="city"> 
+    <div>
     <h2> Los Angelos 🇺🇸</h2>
-</div>
 <div class="date">February 8th 2026</div>
-<div class="time"> 14:07 PM </div>
-
+</div>
+<div class="time"> 14:07 <small>PM</small> </div>
+</div>
 <div class="city"> 
-    <h2> Hong Kong 🇨🇳</h2>
-</div>
+    <div>
+    <h2> Hong Kong 🇭🇰</h2>
 <div class="date">February 8th 2026</div>
-<div class="time"> 14:07 PM </div>
+</div>
+<div class="time"> 14:07 <small>PM</small> </div>
+</div>
+<div class="city"> 
+    <div>
+    <h2> Paris 🇫🇷</h2>
+<div class="date">February 8th 2026</div>
+</div>
+<div class="time"> 14:07 <small>PM</small> </div>
+</div>
+
+</div>
      <footer> 
       <p>
         This project was coded by
